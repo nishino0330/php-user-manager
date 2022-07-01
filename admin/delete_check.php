@@ -27,7 +27,7 @@
 <body>
     <h1>ユーザー登録</h1>
     
-    <form method="POST" action="./comp.php">
+    <form method="POST" action="./delete_comp.php">
         <div class="mb-3">
             <label for="exampleInputName" class="form-label">User Name</label>
             <input type="name" class="form-control" readonly id="exampleInputName" name="user_name"
@@ -45,16 +45,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <a herf=",/detail.php?user_id=><?php echo $user_id; ?>"class="btn btn-primary">Delete</a>
-    <form method="POST" action="./input.php">
-        <input type="hidden" class="form-control" readonly id="exampleInputName" name="user_name"
-            aria-describedby="emailHelp" value="<?php echo $user['user_name']; ?>">
-        <input type="hidden" class="form-control" readonly id="exampleInputEmail1" name="mail_address"
-            aria-describedby="emailHelp" value="<?php echo $user['mail_address']; ?>">
-        <input type="hidden" class="form-control" readonly id="exampleInputPass_word1" name="pass_word"
-            value="<?php echo str_repeat("*", 6); ?>">
-        <button type="submit" class="btn btn-primary">Back</button>
-    </form>
+    <a herf="./detail.php?user_id=><?php echo $user_id; ?>"class="btn btn-primary">Back</a>
 
 
     <!-- Optional JavaScript; choose one of the two! -->

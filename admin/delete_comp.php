@@ -39,12 +39,11 @@ try{
     <div class="alert alert-success" role="alert">
         登録完了
     </div>
-    <a href="./input.php" class="btn btn-info">入力画面へ</a>
+    <a href="./list.php" class="btn btn-info">入力画面へ</a>
     <?php } else { ?>
     <div class="alert alert-success" role="alert">
         <?php echo implode('<br>' , $errors ) ?>
     </div>
-    <?php } ?>
     <form method="POST" action="./check.php">
         <div class="mb-3">
             <label for="exampleInputName" class="form-label">User Name</label>
@@ -63,6 +62,7 @@ try{
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    <?php } ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
