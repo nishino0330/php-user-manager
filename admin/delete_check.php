@@ -45,8 +45,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <a herf="./detail.php?user_id=><?php echo $user_id; ?>"class="btn btn-primary">Back</a>
-
+    <a href="./detail.php?user_id=><?php echo $user_id; ?>" class="btn btn-primary">Back</a>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
